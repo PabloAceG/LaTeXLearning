@@ -1,0 +1,127 @@
+\documentclass[10pt]{article}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %                                 PACKAGES                                   %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Identifies input coming with an UTF-8 format
+\usepackage[utf8]{inputenc}
+% Uses 8-bit T1 fonts (Latin) 
+\usepackage{setspace}
+ \singlespacing
+% Arial font.
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\setlength{\parindent}{0.4cm}
+% Equations
+\usepackage{amsmath}
+% Enum Item
+\usepackage{enumitem}
+% Easy Lists
+\usepackage[ampersand]{easylist}
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+% Formatting margins
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ }
+% Hyperreferences
+\usepackage{hyperref}
+% Images
+\usepackage{graphicx}
+% Set images location
+\usepackage{wrapfig}
+% Position for tables and images
+\usepackage{float}
+% Blibliography
+\usepackage[backend=biber, style=numeric]{biblatex}
+ \addbibresource{artAPA.bib}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %                                  TITLE                                     %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\title{
+    Edge of Things: The Big Picture on the Integration of Edge, IoT and Cloud in
+    a Distributed Computed Enviroment
+}
+
+\author{
+Pablo Acereda\\
+Computer Science Degree\\
+}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% %                                 DOCUMENT                                   %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\begin{document}
+
+% Creating title.
+\maketitle
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+% Insert abstract
+
+\end{abstract}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% KEYWORDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf Keywords:}
+    % Insert keywords
+
+\section{Introduction}
+
+\section{Name of section}
+
+\subsection{Subsection name}
+
+\subsubsection{Subsubsection name}
+
+\begin{equation}
+% Insert corresponding equation
+\end{equation}
+
+% The way to reference equation symbols outside equation section $symbol$
+
+% List of elements
+\begin{enumerate}
+ \item 
+\end{enumerate}
+
+\begin{description}[align=left]
+ \item [Item1] 
+ \item [Item2]
+\end{description}
+
+% \textit{Text in italic}
+
+% \cite{Cited reference}
+
+% Single paged Table 
+\begin{table}[h!]
+ \centering
+  \begin{tabular}
+        { | p{3cm} | p{3cm} | p{3cm} | p{3cm} | }
+  \hline
+  Col1 & Col2 & Col3 & Col4 \\
+  \hline
+  Val1 & Val2 & Val3 & Val4 \\
+  \hline
+  \end{tabular}
+\caption{Some caption.}
+\end{table}
+
+\begin{figure}[h!]
+ \centering
+ % \includegraphics[width=0.6\textwidth]{nameOfPicture.png}
+ \caption{Write a caption.
+          \label{thisIsAReference}}
+\end{figure}
+
+% Bibliography
+
+\printbibliography
+
+\end{document}
